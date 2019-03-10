@@ -16,3 +16,4 @@
 ///});
 
 Route::get('/', 'BMIController@index');
+Route::get('/calc', 'BMIController@calc');

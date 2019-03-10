@@ -10,4 +10,8 @@ class BMIController extends Controller
     public function index() {
 	return 'in BMIController - just prep';
     }
+
+    public function calc() {
+	return 'perform calculations here';
+    }
 }
