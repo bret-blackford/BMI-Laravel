@@ -17,3 +17,4 @@
 
 Route::get('/', 'BMIController@index');
 Route::get('/calc', 'BMIController@calc');
+Route::get('/practiceX', 'BMIController@practiceX');
