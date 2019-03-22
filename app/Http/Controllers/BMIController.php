@@ -8,8 +8,9 @@ use IanLChapman\PigLatinTranslator\Parser;
 class BMIController extends Controller
 {
     //
-    public function index() {
-	return 'in BMIController - just prep';
+    public function index($title = "default title") {
+	//return 'in BMIController - just prep';
+        return view('bmi.bmi')->with(['title' => $title]);
     }
 
     public function calc() {
@@ -22,4 +23,5 @@ class BMIController extends Controller
 	dump( $translation );
 	dump( 'in practiceX() of the BMIController' );
     }
+    
 }
