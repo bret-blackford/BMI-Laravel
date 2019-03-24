@@ -5,16 +5,16 @@
 @endsection
 
 @section('head')
-    {{-- Page specific CSS includes should be defined here; this .css file does not exist yet, but we can create it --}}
     <link href='/css/bmi.css' type='text/css' rel='stylesheet'>
 @endsection
 
 @section('content')
     <h1>{{ $title }}</h1>
-    mBret in show.blade.php
+    <p>mBret in resources/views/bmi/show.blade.php<br>
+        Note: show.blade.php extends resources/views/layouts/master.blade.php</p>
     
     <p>
-        Details about this book will go here...
+        Details about this project will go here...
     </p>
 @endsection
 

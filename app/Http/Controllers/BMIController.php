@@ -9,13 +9,14 @@ class BMIController extends Controller
 {
     //
     public function index($title = "default title") {
-	return 'in BMIController - just prep';
+	return 'in app/Http/Controllers/BMIController - just prep';
         //return view('bmi.bmi')->with( ['title' => $title] );
     }
 
     public function calc($title = "default title") {
 	//return 'in calc() : perform calculations here';
-        return view('bmi.bmi')->with( ['title' => $title] );
+        //return view('bmi.bmi')->with( ['title' => $title] );
+        return view('bmi.show')->with( ['title' => $title] );
     }
 
     public function practiceX() {

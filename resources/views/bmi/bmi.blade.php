@@ -15,7 +15,7 @@
         <h2>{{ $title }}</h2>
         
         <p>
-            Details about this book will go here...
+            in resources/views/bmi/bmi.blade.php and mBret says details about this book will go here...
         </p>
     </section>
 
