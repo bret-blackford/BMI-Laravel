@@ -14,7 +14,7 @@ class BMIController extends Controller
     }
 
     public function calc(Request $request, $title = "default title") {
-        $name = $request->session()->get(name,'');
+        $name = $request->session()->get('name','');
         $dob = $request->session()->get('dob', null);
         $gender = $request->session()->get('gender',null);
         $heightFeet = $request->session()->get('heightFeet',null);
