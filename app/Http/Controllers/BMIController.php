@@ -22,7 +22,14 @@ class BMIController extends Controller
         
 	//return 'in calc() : perform calculations here';
         //return view('bmi.bmi')->with( ['title' => $title] );
-        return view('bmi.show')->with( ['title' => $title] );
+        return view('bmi.show')->with( [
+            'title' => $title,
+            'name' => $name,
+            'dob' => $dob,
+            'gender' => $gender,
+            'heightFeet' => $heightFeet,
+            'heightInches' => $heightInches,
+                ]);
     }
 
     public function practiceX() {
