@@ -13,7 +13,13 @@ class BMIController extends Controller
         //return view('bmi.bmi')->with( ['title' => $title] );
     }
 
-    public function calc($title = "default title") {
+    public function calc(Request $request, $title = "default title") {
+        $name = $request->session()->get(name,'');
+        $dob = $request->session()->get('dob', null);
+        $gender = $request->session()->get('gender',null);
+        $heightFeet = $request->session()->get('heightFeet',null);
+        $heightInches = $request->session()->get('heightInches',null);
+        
 	//return 'in calc() : perform calculations here';
         //return view('bmi.bmi')->with( ['title' => $title] );
         return view('bmi.show')->with( ['title' => $title] );
