@@ -19,6 +19,7 @@ class BMIController extends Controller
         $gender = $request->session()->get('gender',null);
         $heightFeet = $request->session()->get('heightFeet',null);
         $heightInches = $request->session()->get('heightInches',null);
+        $weight = $request->session()->get('weight',null);
         
 	//return 'in calc() : perform calculations here';
         //return view('bmi.bmi')->with( ['title' => $title] );
@@ -29,6 +30,7 @@ class BMIController extends Controller
             'gender' => $gender,
             'heightFeet' => $heightFeet,
             'heightInches' => $heightInches,
+            'weight' => $weight,
                 ]);
     }
 
