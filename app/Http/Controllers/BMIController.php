@@ -8,9 +8,16 @@ use IanLChapman\PigLatinTranslator\Parser;
 class BMIController extends Controller
 {
     //
-    public function index($title = "default title") {
-	return 'in app/Http/Controllers/BMIController - just prep';
-        //return view('bmi.bmi')->with( ['title' => $title] );
+    public function index() {
+	dump( 'in app/Http/Controllers/BMIController - just prep' );
+        return view('bmi.bmi')->with( [
+            'name' => 'Bret',
+            'dob' => null,
+            'gender' => null,
+            'heightFeet' => 6,
+            'heightInches' => 1,
+            'weight' => 177,
+                ]);
     }
 
     public function calc(Request $request) {
