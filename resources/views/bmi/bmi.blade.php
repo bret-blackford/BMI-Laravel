@@ -67,9 +67,9 @@ Enter the information below and the app will calculate your body mass index, or 
                 <input type="number" name='weight' step='0.1' value='{{ $weight }}'>
             </label>
         </div>
-            <input type="submit" value='calculate' class='btn'>
-    </fieldset>
 
+    </fieldset>
+    <input type="submit" value='calculate' class='btn'>
 </form>
 @endsection
 

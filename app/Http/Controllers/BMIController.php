@@ -49,7 +49,7 @@ class BMIController extends Controller {
         dump('in practiceX() of the BMIController');
     }
 
-    public function check(Request $request) {
+    public function chex(Request $request) {
         dump( $request->all() );
 
         $request->validate([
