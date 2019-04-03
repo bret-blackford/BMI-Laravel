@@ -50,6 +50,7 @@ class BMIController extends Controller {
     }
 
     public function chex(Request $request) {
+        dump( ' i am here in BMIController::chex()');
         dump( $request->all() );
 
         $request->validate([

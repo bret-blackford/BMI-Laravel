@@ -19,7 +19,7 @@ Enter the information below and the app will calculate your body mass index, or 
 <form method='POST'  class='form' action='/check'>
     <fieldset>
         <label class='line'>Name</label>
-        <input type='text' name='name' value='{{ $name }}'>
+        <input type='text' name='name' value='{{ $name }}'></br>
 
         <label class='line'>Date of Birth</label>
         <input type="date" name='dob' value=' {{ old("dob") }} '>
