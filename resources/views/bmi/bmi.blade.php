@@ -20,7 +20,7 @@ Enter the information below and the app will calculate your body mass index, or 
     <fieldset>
         {{ csrf_field() }}
         <label class='line'>Name</label>
-        <input type='text' name='name' value='{{ $name }}'></br>
+        <input type='text' name='name' value='{{ old("name") }}'></br>
 
         <label class='line'>Date of Birth</label>
         <input type="date" name='dob' value=' {{ old("dob") }} '>
@@ -65,7 +65,7 @@ Enter the information below and the app will calculate your body mass index, or 
 
         <div id='weight-block'>
             <label>Weight in lbs.
-                <input type="number" name='weight' step='0.1' value='{{ $weight }}'>
+                <input type="number" name='weight' step='0.1' value='{{ old("weight") }}'>
             </label>
         </div>
 
