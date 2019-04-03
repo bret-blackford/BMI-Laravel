@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App;
 use IanLChapman\PigLatinTranslator\Parser;
 
 class BMIController extends Controller {
