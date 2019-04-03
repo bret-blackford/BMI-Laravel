@@ -49,8 +49,8 @@ class BMIController extends Controller {
 
     public function validate(Request $request) {
 
-        dump($request);
-
+        dump($request->all());
+/*
         $request->validate([
             'name' => 'required',
             'dob' => 'required',
@@ -59,6 +59,8 @@ class BMIController extends Controller {
             'heightInches' => 'required',
             'weight' => 'required',
         ]);
+ * */
+ */
         dump('in BMIController validate()');
     }
 
