@@ -8,8 +8,9 @@ use IanLChapman\PigLatinTranslator\Parser;
 class BMIController extends Controller {
     //
     public function index() {
-        dump('in app/Http/Controllers/BMIController - just prep');
+        dump('in app/Http/Controllers/BMIController::index() - just prep');
         return view('bmi.bmi')->with([
+        //return view('bmi.show')->with([
                     'name' => 'Bret',
                     'dob' => null,
                     'gender' => null,
@@ -48,7 +49,7 @@ class BMIController extends Controller {
         dump('in practiceX() of the BMIController');
     }
 
-    public function validationCheck(Request $request) {
+    public function check(Request $request) {
         dump( $request->all() );
 
         $request->validate([
