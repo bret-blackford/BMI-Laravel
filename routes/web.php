@@ -16,7 +16,7 @@
 ///});
 
 Route::get('/', 'BMIController@index');
-Route::get('/bmi', 'BMIController@index)');
+Route::get('/bmi', 'BMIController@index');
 Route::get('/calc/{title?}', 'BMIController@calc');
 Route::get('/practiceX', 'BMIController@practiceX');
 Route::post('/check', 'BMIController@chex');
