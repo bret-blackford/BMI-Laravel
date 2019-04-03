@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use IanLChapman\PigLatinTranslator\Parser;
 
 class BMIController extends Controller {
-
     //
     public function index() {
         dump('in app/Http/Controllers/BMIController - just prep');
@@ -21,6 +20,8 @@ class BMIController extends Controller {
     }
 
     public function calc(Request $request) {
+        dump('in BMIController calc()');
+        
         $name = $request->session()->get('name', '');
         $dob = $request->session()->get('dob', null);
         $gender = $request->session()->get('gender', null);
@@ -48,7 +49,6 @@ class BMIController extends Controller {
     }
 
     public function validate(Request $request) {
-
         dump( $request->all() );
 
         $request->validate([
