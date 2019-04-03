@@ -72,6 +72,8 @@ Enter the information below and the app will calculate your body mass index, or 
     </fieldset>
     <input type="submit" value='calculate' class='btn'>
 </form>
+
+
 @endsection
 
 

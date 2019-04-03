@@ -14,6 +14,14 @@
     <a href='/'><img src='/images/foobooks-logo@2x.png' id='logo' alt='Foobooks Logo'></a>
 </header>
 
+    @if( count($errors) > 0 ) 
+    <ul>
+        @foreach($errors->all() as $error)
+        <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+    @endif
+    
 <section>
     @yield('content')
 </section>

@@ -11,12 +11,12 @@ class BMIController extends Controller {
         dump('in app/Http/Controllers/BMIController::index() - just prep');
         return view('bmi.bmi')->with([
         //return view('bmi.show')->with([
-                    'name' => 'Bret',
+                    'name' => null,
                     'dob' => null,
                     'gender' => null,
-                    'heightFeet' => 6,
-                    'heightInches' => 1,
-                    'weight' => 177,
+                    'heightFeet' => null,
+                    'heightInches' => null,
+                    'weight' => null,
         ]);
     }
 
