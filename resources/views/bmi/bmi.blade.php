@@ -18,6 +18,7 @@ Enter the information below and the app will calculate your body mass index, or 
 <!--form method='POST'  class='form' -->
 <form method='POST'  class='form' action='/check'>
     <fieldset>
+        {{ csrf_field() }}
         <label class='line'>Name</label>
         <input type='text' name='name' value='{{ $name }}'></br>
 
