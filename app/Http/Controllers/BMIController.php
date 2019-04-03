@@ -48,7 +48,7 @@ class BMIController extends Controller {
         dump('in practiceX() of the BMIController');
     }
 
-    public function validate(Request $request) {
+    public function validationCheck(Request $request) {
         dump( $request->all() );
 
         $request->validate([
