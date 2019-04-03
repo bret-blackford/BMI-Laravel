@@ -60,7 +60,7 @@ class BMIController extends Controller {
             'weight' => 'required',
         ]);
  * */
- */
+ 
         dump('in BMIController validate()');
     }
 
