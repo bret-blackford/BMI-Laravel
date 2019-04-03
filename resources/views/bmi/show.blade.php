@@ -14,7 +14,7 @@
 Enter the information below and the app will calculate your body mass index, or BMI, which gives you and indication if you are at a healthy body weight.
 
 <!--form method='POST' action='calcBMI.php' class='form'-->
-<form method='POST'  class='form' >
+<form method='POST'  class='form' acti0n="/validate">
     <fieldset>
         <label class='line'>Name</label>
             <input type='text' name='name' value='{{ $name }}'>
@@ -66,6 +66,7 @@ Enter the information below and the app will calculate your body mass index, or 
             </label>
         </div>
     </fieldset>
+    <input type="submit" value='calculate' class='btn'>
 </form>
         @endsection
 

@@ -7,3 +7,74 @@ h2 {
     color: red;
     background-color: yellow;
 }
+
+html {
+    width: 30em;
+    margin-left: 5%;
+}
+
+fieldset {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+    background-color: lightgoldenrodyellow;
+    margin-top: 15px;
+}
+
+input[type='radio'] {
+    margin-right: 0;
+    vertical-align: middle;
+    margin-top: 3px;
+}
+
+.line {
+    float:left;
+    margin-top: .25em;
+}
+
+#gender-block, #height-block, #weight-block {
+    margin-top: .25em;
+    float:left;
+    clear: left;
+}
+
+input[name=name]{
+    width:200px;
+}
+
+#results {
+    font-size: 1.25em;
+    margin-top: 1em;
+    background-color: linen;
+    padding: .5em;
+}
+
+
+footer {
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+}
+
+#ftr {
+    display: block;
+    width: 100%;
+    float: right;
+    font-size: .75em;
+    text-align: right;
+    color: black;
+    margin-top: .5em;
+    padding-top: .25em;
+}
+
+form #alerts li.alert-danger {
+    display: block;
+    color: red;
+    background-color: yellow !important;
+    width:100%;
+}
+
+#alerts ul li{
+    font-size: 1.25em;
+    margin-top: 1em;
+    background-color: red;
+    padding: .5em;
+}

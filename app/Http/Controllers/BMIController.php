@@ -47,4 +47,19 @@ class BMIController extends Controller
 	dump( 'in practiceX() of the BMIController' );
     }
     
+    public function validate(Request $request) {
+        
+        dump($request);
+        
+        $request->validate([
+            'name' => 'required',
+            'dob' => 'required',
+            'gender' => 'required',
+            'heightFeet' => 'required',
+            'heightInches' => 'required',
+            'weight' => 'required',
+        ]);
+        dump('in BMIController validate()');
+    }
+    
 }
