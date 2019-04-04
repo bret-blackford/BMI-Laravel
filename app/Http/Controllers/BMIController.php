@@ -63,6 +63,28 @@ class BMIController extends Controller {
         ]);
   
         dump('in BMIController validate()');
+        
+            $totHeightInches = 0;
+    $bmi = 0.00;
+    if ($form->isSubmitted()) {
+        $totHeightInches = ($heightFeet * 12) + $heightInches;
+        $bmi = number_format(($weight * 703) / (pow($totHeightInches, 2)), 2);
+    }
+
+        $status = 'obese';
+    if ($bmi < 30) {
+        $status = 'overweight';
+    } if ($bmi < 25) {
+        $status = 'normal';
+    } if ($bmi < 18.5) {
+        $status = 'underweight';
+    }
+
+    $response = $name . ", you are a " . $age . " year old " . $gender;
+    $response .= " and have a body mass index (BMI) of : <b>" . $bmi . "</b>%";
+    $response .= " which classifies you as <b>" . $status . "</b>";
+
+    return $response;
     }
 
 }

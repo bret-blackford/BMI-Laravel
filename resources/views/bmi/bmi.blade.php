@@ -32,33 +32,34 @@ Enter the information below and the app will calculate your body mass index, or 
             <input type="radio" name='gender' value='Female' >
             <label>female</label>
         </div>
+        
         <div id='height-block'>
             <label>Height in feet
-                <select name="heightFeet" >
-                    <option value="1" >1</option>
-                    <option value="2" >2</option>
-                    <option value="3" >3</option>
-                    <option value="4" >4</option>
-                    <option value="5" >5</option>
-                    <option value="6" >6</option>
-                    <option value="7" >7</option>
-                    <option value="8" >8</option>
+                <select name="heightFeet" >                  
+                    <option value='1' {{ (old('heightFeet') == '1') ? 'selected' : '' }}>1</option>
+                    <option value="2" {{ (old('heightFeet')=='2') ? 'selected' : '' }}>2</option>
+                    <option value="3" {{ (old('heightFeet')=='3') ? 'selected' : '' }}>3</option>
+                    <option value="4" {{ (old('heightFeet')=='4') ? 'selected' : '' }}>4</option>
+                    <option value="5" {{ (old('heightFeet')=='5') ? 'selected' : '' }}>5</option>
+                    <option value="6" {{ (old('heightFeet')=='6') ? 'selected' : '' }}>6</option>
+                    <option value="7" {{ (old('heightFeet')=='7') ? 'selected' : '' }}>7</option>
+                    <option value="8" {{ (old('heightFeet')=='8') ? 'selected' : '' }}>8</option>
                 </select>
             </label>
             <label>Height in inches
                 <select name="heightInches" >
-                    <option value="0" >0</option>
-                    <option value="1" >1</option>
-                    <option value="2" >2</option>
-                    <option value="3" >3</option>
-                    <option value="4" >4</option>
-                    <option value="5" >5</option>
-                    <option value="6" >6</option>
-                    <option value="7" >7</option>
-                    <option value="8" >8</option>
-                    <option value="9" >9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
+                    <option value="0" {{ (old('heightInches')=='0') ? 'selected' : '' }}>0</option>
+                    <option value="1" {{ (old('heightInches')=='1') ? 'selected' : '' }}>1</option>
+                    <option value="2" {{ (old('heightInches')=='2') ? 'selected' : '' }}>2</option>
+                    <option value="3" {{ (old('heightInches')=='3') ? 'selected' : '' }}>3</option>
+                    <option value="4" {{ (old('heightInches')=='4') ? 'selected' : '' }}>4</option>
+                    <option value="5" {{ (old('heightInches')=='5') ? 'selected' : '' }}>5</option>
+                    <option value="6" {{ (old('heightInches')=='6') ? 'selected' : '' }}>6</option>
+                    <option value="7" {{ (old('heightInches')=='7') ? 'selected' : '' }}>7</option>
+                    <option value="8" {{ (old('heightInches')=='8') ? 'selected' : '' }}>8</option>
+                    <option value="9" {{ (old('heightInches')=='9') ? 'selected' : '' }}>9</option>
+                    <option value="10" {{ (old('heightInches')=='10') ? 'selected' : '' }}>10</option>
+                    <option value="11" {{ (old('heightInches')=='11') ? 'selected' : '' }}>11</option>
                 </select>
             </label>
         </div>
