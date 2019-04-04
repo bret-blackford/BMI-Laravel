@@ -64,7 +64,14 @@ class BMIController extends Controller {
   
         dump('in BMIController validate()');
         
-            $totHeightInches = 0;
+        
+        
+    $dob2 = new DateTime($dob);
+    $now = new DateTime();
+    $difference = $now->diff($dob2);
+    $age = $difference->y;
+    
+    $totHeightInches = 0;
     $bmi = 0.00;
     
         $totHeightInches = ($heightFeet * 12) + $heightInches;
