@@ -63,10 +63,15 @@ class BMIController extends Controller {
         ]);
   
         dump('in BMIController validate()');
+    
+    $name = $request->input('name',null);    
+    $dob = $request->input('dob', null); 
+    $gender = $request->input('gender', null); 
+    $heightFeet = $request->input('heightFeet', null); 
+    $heightInches = $request->input('heightInches', null); 
+    $weight = $request->input('weight', null); 
         
-        
-        
-    $dob2 = new DateTime($dob);
+    $dob2 = new DateTime( $dob);
     $now = new DateTime();
     $difference = $now->diff($dob2);
     $age = $difference->y;
