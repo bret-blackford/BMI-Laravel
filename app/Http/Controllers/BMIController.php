@@ -100,7 +100,7 @@ class BMIController extends Controller {
 
         //return $response;
 
-        redirect('bmi/bmi')->with([
+        redirect('/bmi')->with([
             'response' => $response
         ]);
     }
