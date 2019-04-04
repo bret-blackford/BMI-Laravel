@@ -1,35 +1,34 @@
 <!doctype html>
 <html lang='en'>
-<head>
-    <title>@yield('title')</title>
-    <meta charset='utf-8'>
+    <head>
+        <title>@yield('title')</title>
+        <meta charset='utf-8'>
 
-    <link href='/css/bmi.css' type='text/css' rel='stylesheet'>
+        <link href='/css/bmi.css' type='text/css' rel='stylesheet'>
 
-    @yield('head')
-</head>
-<body>
+        @yield('head')
+    </head>
+    <body>
 
-<header>
-</header>
+        <section>
+            @yield('content')
+        </section>
 
-    @if( count($errors) > 0 ) 
-    <ul>
-        @foreach($errors->all() as $error)
-        <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-    @endif
-    
-<section>
-    @yield('content')
-</section>
+        <div id="alerts">
+            @if( count($errors) > 0 ) 
+            <ul>
+                @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+            @endif
+        </div>
 
-<footer>
-    &copy; {{ date('Y') }} <h2>mBret was here<h2>
-</footer>
+        <footer>
+            &copy; {{ date('Y') }} 
+        </footer>
 
-</body>
+    </body>
 </html>
 
 

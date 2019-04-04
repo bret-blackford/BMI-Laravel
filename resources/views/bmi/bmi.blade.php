@@ -7,9 +7,9 @@
 @endsection
 
 @section('content')
-<h1>BMI</h1>
 <h1>BMI Calculator</h1>
-Enter the information below and the app will calculate your body mass index, or BMI, which gives you and indication if you are at a healthy body weight. NOTE: All Fields Are Required!
+Enter the information below and the app will calculate your body mass index, or BMI, which gives you and indication if you are at a healthy body weight. </br>
+NOTE: All Fields Are Required!
 
 <!--form method='POST' action='calcBMI.php' class='form'-->
 <!--form method='POST'  class='form' -->
