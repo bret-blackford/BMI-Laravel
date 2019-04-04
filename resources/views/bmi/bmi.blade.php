@@ -23,7 +23,7 @@ Enter the information below and the app will calculate your body mass index, or 
         <input type='text' name='name' value='{{ old("name") }}'></br>
 
         <label class='line'>Date of Birth</label>
-        <input type="date" name='dob' value=' {{ old("dob") }} '>
+        <input type='date' name='dob' value='{{ old("dob") }}'>
 
         <div id='gender-block'>
             Gender:
