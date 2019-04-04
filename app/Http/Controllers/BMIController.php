@@ -66,10 +66,9 @@ class BMIController extends Controller {
         
             $totHeightInches = 0;
     $bmi = 0.00;
-    if ($form->isSubmitted()) {
+    
         $totHeightInches = ($heightFeet * 12) + $heightInches;
         $bmi = number_format(($weight * 703) / (pow($totHeightInches, 2)), 2);
-    }
 
         $status = 'obese';
     if ($bmi < 30) {
