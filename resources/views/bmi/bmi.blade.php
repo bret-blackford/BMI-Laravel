@@ -71,6 +71,9 @@ NOTE: All Fields Are Required!
     <input type="submit" value='calculate' class='btn'>
 </form>
 
+@if($response)
+    <h2> {{ $response }} </h2>
+@endif
 
 @endsection
 

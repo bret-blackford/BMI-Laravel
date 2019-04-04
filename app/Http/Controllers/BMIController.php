@@ -101,7 +101,8 @@ class BMIController extends Controller {
         dump( 'in BMIController::chex() and response = ' . $response );
         
         return redirect('/bmi')->with([
-            'response' => $response
+            'response' => $response,
+            'request' => $request,
         ]);
 
         //return view('/bmi')->with([
