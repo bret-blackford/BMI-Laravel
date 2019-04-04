@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 use IanLChapman\PigLatinTranslator\Parser;
 
 class BMIController extends Controller {
+
     //
     public function index() {
         //dump('in app/Http/Controllers/BMIController::index() - just prep');
         return view('bmi.bmi')->with([
-        //return view('bmi.show')->with([
+                    //return view('bmi.show')->with([
                     'name' => null,
                     'dob' => null,
                     'gender' => null,
@@ -23,7 +24,7 @@ class BMIController extends Controller {
 
     public function calc(Request $request) {
         //dump('in BMIController calc()');
-        
+
         $name = $request->session()->get('name', '');
         $dob = $request->session()->get('dob', null);
         $gender = $request->session()->get('gender', null);
@@ -62,47 +63,47 @@ class BMIController extends Controller {
             'heightInches' => 'required',
             'weight' => 'required',
         ]);
-  
+
         //dump('in BMIController validate()');
-    
-    $name = $request->input('name',null);    
-    $dob = $request->input('dob', null); 
-    $gender = $request->input('gender', null); 
-    $heightFeet = $request->input('heightFeet', null); 
-    $heightInches = $request->input('heightInches', null); 
-    $weight = $request->input('weight', null); 
-        
-    $dob2 = new DateTime( $dob);
-    $now = new DateTime();
-    $difference = $now->diff($dob2);
-    $age = $difference->y;
-    //$age = 99.9;
-    
-    $totHeightInches = 0;
-    $bmi = 0.00;
-    
+
+        $name = $request->input('name', null);
+        $dob = $request->input('dob', null);
+        $gender = $request->input('gender', null);
+        $heightFeet = $request->input('heightFeet', null);
+        $heightInches = $request->input('heightInches', null);
+        $weight = $request->input('weight', null);
+
+        $dob2 = new DateTime($dob);
+        $now = new DateTime();
+        $difference = $now->diff($dob2);
+        $age = $difference->y;
+        //$age = 99.9;
+
+        $totHeightInches = 0;
+        $bmi = 0.00;
+
         $totHeightInches = ($heightFeet * 12) + $heightInches;
         $bmi = number_format(($weight * 703) / (pow($totHeightInches, 2)), 2);
 
         $status = 'obese';
-    if ($bmi < 30) {
-        $status = 'overweight';
-    } if ($bmi < 25) {
-        $status = 'normal';
-    } if ($bmi < 18.5) {
-        $status = 'underweight';
-    }
+        if ($bmi < 30) {
+            $status = 'overweight';
+        } if ($bmi < 25) {
+            $status = 'normal';
+        } if ($bmi < 18.5) {
+            $status = 'underweight';
+        }
 
-    $response = $name . ", you are a " . $age . " year old " . $gender;
-    $response .= " and have a body mass index (BMI) of : <b>" . $bmi . "</b>%";
-    $response .= " which classifies you as <b>" . $status . "</b>";
+        $response = $name . ", you are a " . $age . " year old " . $gender;
+        $response .= " and have a body mass index (BMI) of : <b>" . $bmi . "</b>%";
+        $response .= " which classifies you as <b>" . $status . "</b>";
 
-    return $response;
-    
-    redirect('bmi/bmi')->with([
-        'response' => $response,
-        'request' => $request
-    ]);
+        //return $response;
+
+        redirect('bmi/bmi')->with([
+            'response' => $response,
+            'request' => $request
+        ]);
     }
 
 }
