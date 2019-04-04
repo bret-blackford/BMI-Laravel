@@ -98,10 +98,11 @@ class BMIController extends Controller {
         $response .= " and have a body mass index (BMI) of : <b>" . $bmi . "</b>%";
         $response .= " which classifies you as <b>" . $status . "</b>";
 
-        dump( 'response' . $response );
-        return redirect('/bmi')->with([
-            'response' => $response
-        ]);
+        dump( 'in BMIController::chex() and response = ' . $response );
+        
+        //return redirect('/bmi')->with([
+        //    'response' => $response
+        //]);
 
         //return view('/bmi')->with([
         //    'response' => $response
