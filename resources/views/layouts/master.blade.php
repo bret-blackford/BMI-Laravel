@@ -11,7 +11,6 @@
 <body>
 
 <header>
-    <a href='/'><img src='/images/foobooks-logo@2x.png' id='logo' alt='Foobooks Logo'></a>
 </header>
 
     @if( count($errors) > 0 ) 

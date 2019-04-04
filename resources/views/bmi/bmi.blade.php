@@ -8,11 +8,8 @@
 
 @section('content')
 <h1>BMI</h1>
-<p>mBret in resources/views/bmi/bmi.blade.php<br>
-    Note: show.blade.php extends resources/views/layouts/master.blade.php</p>
-
 <h1>BMI Calculator</h1>
-Enter the information below and the app will calculate your body mass index, or BMI, which gives you and indication if you are at a healthy body weight.
+Enter the information below and the app will calculate your body mass index, or BMI, which gives you and indication if you are at a healthy body weight. NOTE: All Fields Are Required!
 
 <!--form method='POST' action='calcBMI.php' class='form'-->
 <!--form method='POST'  class='form' -->
