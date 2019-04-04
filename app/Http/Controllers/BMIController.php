@@ -25,6 +25,8 @@ class BMIController extends Controller {
     public function calc(Request $request) {
         //dump('in BMIController calc()');
 
+        $response = $request->response;
+        
         $name = $request->session()->get('name', '');
         $dob = $request->session()->get('dob', null);
         $gender = $request->session()->get('gender', null);
@@ -102,7 +104,6 @@ class BMIController extends Controller {
         
         return redirect('/bmi')->with([
             'response' => $response,
-            'request' => $request,
         ]);
 
         //return view('/bmi')->with([
