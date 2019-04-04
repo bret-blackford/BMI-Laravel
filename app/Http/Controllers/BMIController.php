@@ -9,7 +9,7 @@ use IanLChapman\PigLatinTranslator\Parser;
 class BMIController extends Controller {
     //
     public function index() {
-        dump('in app/Http/Controllers/BMIController::index() - just prep');
+        //dump('in app/Http/Controllers/BMIController::index() - just prep');
         return view('bmi.bmi')->with([
         //return view('bmi.show')->with([
                     'name' => null,
@@ -22,7 +22,7 @@ class BMIController extends Controller {
     }
 
     public function calc(Request $request) {
-        dump('in BMIController calc()');
+        //dump('in BMIController calc()');
         
         $name = $request->session()->get('name', '');
         $dob = $request->session()->get('dob', null);
@@ -51,8 +51,8 @@ class BMIController extends Controller {
     }
 
     public function chex(Request $request) {
-        dump( ' i am here in BMIController::chex()');
-        dump( $request->all() );
+        //dump( ' i am here in BMIController::chex()');
+        //dump( $request->all() );
 
         $request->validate([
             'name' => 'required',
@@ -63,7 +63,7 @@ class BMIController extends Controller {
             'weight' => 'required',
         ]);
   
-        dump('in BMIController validate()');
+        //dump('in BMIController validate()');
     
     $name = $request->input('name',null);    
     $dob = $request->input('dob', null); 
@@ -97,7 +97,11 @@ class BMIController extends Controller {
     $response .= " and have a body mass index (BMI) of : <b>" . $bmi . "</b>%";
     $response .= " which classifies you as <b>" . $status . "</b>";
 
-    return $response;
+    //return $response;
+    redirect('bmi/bmi')->with([
+        'response' => $response,
+        'request' => $request
+    ]);
     }
 
 }

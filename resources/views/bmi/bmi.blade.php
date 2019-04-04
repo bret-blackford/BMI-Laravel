@@ -27,9 +27,9 @@ Enter the information below and the app will calculate your body mass index, or 
 
         <div id='gender-block'>
             Gender:
-            <input type="radio" name='gender' value='Male' >
+            <input type="radio" name='gender' value='Male' {{ (old('gender') == 'Male') ? 'checked' : '' }}>
             <label>male</label>
-            <input type="radio" name='gender' value='Female' >
+            <input type="radio" name='gender' value='Female' {{ (old('gender') == 'Female') ? 'checked' : '' }}>
             <label>female</label>
         </div>
         
