@@ -71,10 +71,11 @@ class BMIController extends Controller {
     $heightInches = $request->input('heightInches', null); 
     $weight = $request->input('weight', null); 
         
-    $dob2 = new DateTime( $dob);
-    $now = new DateTime();
-    $difference = $now->diff($dob2);
-    $age = $difference->y;
+    //$dob2 = new DateTime( $dob);
+    //$now = new DateTime();
+    //$difference = $now->diff($dob2);
+    //$age = $difference->y;
+    $age = 99.9;
     
     $totHeightInches = 0;
     $bmi = 0.00;
