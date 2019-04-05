@@ -46,7 +46,7 @@ class BMIController extends Controller {
                     'heightInches' => $heightInches,
                     'weight' => $weight,
                     'response' => $response,
-        ]);
+        ])->withInput();
     }
 
     public function practiceX() {
@@ -107,7 +107,7 @@ class BMIController extends Controller {
         
         return redirect('/bmi')->with([
             'response' => $response,
-        ]);
+        ])->withInput();
 
         //return view('/bmi')->with([
         //    'response' => $response
