@@ -20,6 +20,7 @@ class BMIController extends Controller {
                     'heightFeet' => null,
                     'heightInches' => null,
                     'weight' => null,
+                    'response' => $response,
         ]);
     }
 
