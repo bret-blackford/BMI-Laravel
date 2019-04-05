@@ -9,8 +9,8 @@ use IanLChapman\PigLatinTranslator\Parser;
 class BMIController extends Controller {
 
     //
-    public function index() {
-        $response = $request->response;
+    public function index(Request $request) {
+        $response = $request->session()->get('response', null);
 
         return view('bmi.bmi')->with([
                     //return view('bmi.show')->with([
