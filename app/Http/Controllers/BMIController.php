@@ -10,7 +10,8 @@ class BMIController extends Controller {
 
     //
     public function index() {
-        //dump('in app/Http/Controllers/BMIController::index() - just prep');
+        $response = $request->response;
+
         return view('bmi.bmi')->with([
                     //return view('bmi.show')->with([
                     'name' => null,
@@ -25,7 +26,7 @@ class BMIController extends Controller {
     public function calc(Request $request) {
         //dump('in BMIController calc()');
 
-        $response = $request->response;
+        $response = $request->session()->get('response', null);
         
         $name = $request->session()->get('name', '');
         $dob = $request->session()->get('dob', null);
@@ -43,6 +44,7 @@ class BMIController extends Controller {
                     'heightFeet' => $heightFeet,
                     'heightInches' => $heightInches,
                     'weight' => $weight,
+                    'response' => $response,
         ]);
     }
 
