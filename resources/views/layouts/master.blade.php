@@ -25,7 +25,7 @@
         </div>
 
         <footer>
-            &copy; {{ date('Y') }} 
+            &copy; {{ date('Y') }}  mBret Blackford
         </footer>
 
     </body>

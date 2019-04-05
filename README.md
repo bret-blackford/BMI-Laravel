@@ -1,4 +1,5 @@
-# by: M Bret Blackford
-Info from laptop
-url => http://www.bret-dwa15.vip/BMI-Laravel/public/calc/beatles
+by: M Bret Blackford
+Date: April 5, 2019
+url : http://p3.bret-dwa15.vip/ or http://p3.bret-dwa15.vip/bmi
+
 
