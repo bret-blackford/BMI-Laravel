@@ -100,8 +100,8 @@ class BMIController extends Controller {
         }
 
         $response = $name . ", you are a " . $age . " year old " . $gender;
-        $response .= " and have a body mass index (BMI) of : <b>" . $bmi . "</b>%";
-        $response .= " which classifies you as <b>" . $status . "</b>";
+        $response .= " and have a body mass index (BMI) of : " . $bmi . "%";
+        $response .= " which classifies you as " . $status . "";
 
         dump( 'in BMIController::chex() and response = ' . $response );
         
