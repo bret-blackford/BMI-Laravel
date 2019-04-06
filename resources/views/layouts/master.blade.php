@@ -1,9 +1,10 @@
 <!doctype html>
+<!-- M. Bret Blackford -->
+<!-- Date: April 2019 -->
 <html lang='en'>
     <head>
         <title>@yield('title')</title>
         <meta charset='utf-8'>
-
         <link href='/css/bmi.css' type='text/css' rel='stylesheet'>
 
         @yield('head')

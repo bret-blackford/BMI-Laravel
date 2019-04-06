@@ -6,7 +6,7 @@
 @endsection
 
 @section('content')
-<h1>BMI</h1>
+<h1>DEPRiCATED</h1>
 <p>mBret in resources/views/bmi/show.blade.php<br>
     Note: show.blade.php extends resources/views/layouts/master.blade.php</p>
 

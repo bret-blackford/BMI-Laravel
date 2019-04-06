@@ -8,7 +8,6 @@ use IanLChapman\PigLatinTranslator\Parser;
 
 class BMIController extends Controller {
 
-    //
     public function index(Request $request) {
         $response = $request->session()->get('response', null);
 
@@ -61,15 +60,14 @@ class BMIController extends Controller {
         //dump( $request->all() );
 
         $request->validate([
-            'name' => 'required',
+            'name' => 'required|alpha',
             'dob' => 'required',
             'gender' => 'required',
             'heightFeet' => 'required',
             'heightInches' => 'required',
-            'weight' => 'required',
+            'weight' => 'required|between:0,999',
         ]);
 
-        //dump('in BMIController validate()');
 
         $name = $request->input('name', null);
         $dob = $request->input('dob', null);
@@ -82,7 +80,6 @@ class BMIController extends Controller {
         $now = new DateTime();
         $difference = $now->diff($dob2);
         $age = $difference->y;
-        //$age = 99.9;
 
         $totHeightInches = 0;
         $bmi = 0.00;
@@ -108,10 +105,5 @@ class BMIController extends Controller {
         return redirect('/bmi')->with([
             'response' => $response,
         ])->withInput();
-
-        //return view('/bmi')->with([
-        //    'response' => $response
-        //]);
     }
-
 }
