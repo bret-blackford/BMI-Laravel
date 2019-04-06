@@ -73,6 +73,8 @@ NOTE: All Fields Are Required!
 
 @if($response)
     <h2> {{ $response }} </h2>
+    or, in pig-latin ...
+    <h2> {{ $translation }} </h2>
 @endif
 
 @endsection
