@@ -52,7 +52,7 @@ class BMIController extends Controller {
         //dump( $request->all() );
 
         $request->validate([
-            'name' => 'required|alpha',
+            'name' => 'required|regex:/^[\pL\s\-]+$/u',
             'dob' => 'required',
             'gender' => 'required',
             'heightFeet' => 'required',
