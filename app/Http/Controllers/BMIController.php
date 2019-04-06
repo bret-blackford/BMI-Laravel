@@ -4,13 +4,11 @@ namespace App\Http\Controllers;
 
 use DateTime;
 use Illuminate\Http\Request;
-use IanLChapman\PigLatinTranslator\Parser;
 
 class BMIController extends Controller {
 
     public function index(Request $request) {
         $response = $request->session()->get('response', null);
-        $translation = $request->session()->get('translation',null);
 
         return view('bmi.bmi')->with([
                     //return view('bmi.show')->with([
@@ -21,7 +19,6 @@ class BMIController extends Controller {
                     'heightInches' => null,
                     'weight' => null,
                     'response' => $response,
-                    'translation' => $translation,
         ]);
     }
 
@@ -47,15 +44,7 @@ class BMIController extends Controller {
                     'heightInches' => $heightInches,
                     'weight' => $weight,
                     'response' => $response,
-                    'translation' => $translation,
         ])->withInput();
-    }
-
-    public function practiceX() {
-        $translator = new Parser();
-        $translation = $translator->translate('Hello world !');
-        dump($translation);
-        dump('in practiceX() of the BMIController');
     }
 
     public function chex(Request $request) {
@@ -105,14 +94,8 @@ class BMIController extends Controller {
 
         dump( 'in BMIController::chex() and response = ' . $response );
         
-        $translator = new Parser();
-        $translation = $translator->translate($response);
-        //dump($translation);
-        //dump('in practiceX() of the BMIController');
-        
         return redirect('/bmi')->with([
             'response' => $response,
-            'translation' => $translation,
         ])->withInput();
     }
 }
