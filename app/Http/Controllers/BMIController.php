@@ -65,7 +65,7 @@ class BMIController extends Controller {
             'gender' => 'required',
             'heightFeet' => 'required',
             'heightInches' => 'required',
-            'weight' => 'min:1|max:999',
+            'weight' => 'between:1,800',
         ]);
 
 
