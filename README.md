@@ -1,5 +1,5 @@
 
-Project 3
+## Project 3
 By: M Bret Blackford
 Production URL: http://p3.bret-dwa15.vip
 
@@ -14,8 +14,8 @@ Production URL: http://p3.bret-dwa15.vip
 3. *Checkbox to indicate gender*
 4. *Dropdown to indicate height in feet*
 
-##Packages
-None
+## Packages
+*None*
 
 ## Code style divergences
 *Deafult NetBeans IDE format, which approximates PSR-1/PSR-2 and course guidelines on code style*
