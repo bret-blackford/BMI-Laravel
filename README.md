@@ -15,7 +15,7 @@ Production URL: http://p3.bret-dwa15.vip
 4. *Dropdown to indicate height in feet*
 
 ## Packages
-barryvdh/laravel-debugbar, which adds a useful debugging/info panel to the Laravel application.
+barryvdh/laravel-debugbar, which adds a useful debugging/info panel to the Laravel application. (Runs in DEV not PROD)
 * https://packagist.org/packages/barryvdh/laravel-debugbar
 
 ## Code style divergences
