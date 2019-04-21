@@ -4,25 +4,15 @@
 + Reviwee's name: Michael Cuneo 
 + URL to Reviewe's P3 Github Repo URL: *<https://github.com/cuneo24/Project-3>*
 
-*Answer the following questions in regards to the student's project you are reviewing. REMOVE THE INSTRUCTIONS FOR EACH PROMPT when complete. We should only see YOUR ANSWERS.*
 
 ## 1. Interface
-Address as many of the following points as applicable:
-
-+ What are your initial impressions of the site interface?
  
- I like the asthetic of the site.  The 3-d shadowing of the card is very nice.  Good use of graphics, including Harvard colors and crest.  It would have been preferable if the inut area were shorter, not requiring as much page scrolling.
-+ Were there any parts of the interface that you found confusing, or did not work as you expected?
-
-Interface is clean but it is not clear what input areas are required.  Not clear how to input phone number, i.e, xxx-xxx-xxxx, or xxxxxxxxx, or xxx/xxx-xxx
-+ Were there any parts of the interface that you thought worked notably well?
-
-Input sections are clear and clean.  It is clear where to eneter data and, for the most part, what type of data is needed.
-+ Do you have any suggestions for improvements on the interface?
-
-Try to get input on a single screen (no scrolling), which may require input data in two columns instead of one.
-Try to put errors closer to field causing problem, instead of at bottom of screen.
-Be clear on what fields are required 
++ I like the asthetic of the site.  The 3-d shadowing of the card is very nice.  Good use of graphics, including Harvard colors and crest.  It would have been preferable if the inut area were shorter, not requiring as much page scrolling.
++ Interface is clean but it is not clear what input areas are required.  Not clear how to input phone number, i.e, xxx-xxx-xxxx, or xxxxxxxxx, or xxx/xxx-xxx
++ Input sections are clear and clean.  It is clear where to eneter data and, for the most part, what type of data is needed.
++ Try to get input on a single screen (no scrolling), which may require input data in two columns instead of one.
++ Try to put errors closer to field causing problem, instead of at bottom of screen.
++ Be clear on what fields are required 
 
 
 ## 2. Functional testing
