@@ -23,11 +23,7 @@
 + Attempted adding html syntax to text entry, such as `<p>Bret</p>` to the First Name field.  No unusual behavior noticed.
 
 ## 3. Code: Routes
-Skim through the student's code on Github.
 
-Find their routes file (`routes/web.php`). Thinking about ideal Route/Controller organization&mdash; is there any code in this file that should be happening in a Controller?
-
-If yes, describe.
 + `routes/web.php` is very clean. No issues noted.
 
 ## 4. Code: Views
