@@ -16,20 +16,7 @@
 
 
 ## 2. Functional testing
-One challenge of developing software is thinking of all the unexpected ways users might interact with our applications. It's easy to develop &ldquo;blinders&rdquo; to methods of interaction because we know so much about *how* our application works, and so we have a hard time imagining how our interfaces might be misinterpreted. Thus, it can be useful to have an outsider rigorously test our applications with the explicit intention of trying to break it.
 
-Knowing this, it's time to put your reviewee's application to the test. Think of all the unexpected ways their application could be used with the intention of trying to produce some unexpected/undesirable outcome.
-
-Examples...
-+ Try submitting a form without entering any data
-+ Try submitting a form with entering data in only some of the fields
-+ If an input is asking for a number, try entering some of the following combinations: decimal numbers, negative numbers, letters, symbols, an extremely large number, etc.
-+ Try and access a URL on their site that likely does not exist (e.g. http://a3.domain.com/asdjfks)
-+ Etc.
-
-__Summarize what you tried, and describe any unexpected/undesirable outcomes.__
-
-(Even if you don't find any issues, having the reviewee see what you tried might give them insight into things they did not think to test.)
 + Name can be non-charachters, such as only umbers or special charachters. 
 + Attempted various phone numbers styles, such as 314-999-9999, 314/999-9999, 314.999.9999, and 3149999999. Only all numbers works, but instructions not clear on this.
 + Attempted to leave out several entry fields but all seem required (though not identified as such)
