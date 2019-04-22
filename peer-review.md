@@ -29,10 +29,9 @@
 ## 4. Code: Views
 Skim through the View files in `/resources/views` and address as many of the following points as applicable:
 
-+ Is template inheritance used? ## yes ##
-+ Are there any separation of concern issues (i.e. non-display specific logic in view files)?
-+ Did they do anything in PHP that could have been done in Blade? ##none noted##
-+ Did they use any Blade syntax/techniques you were unfamiliar with?
++ Template inheritance has been used
++ No separation of concern issues noted
++ Use of PHP and Blade appropriate
 + Small deviation from code standard. Did not indent the following section of code
 ```php
             @if(old('omitCell') != 'on')
