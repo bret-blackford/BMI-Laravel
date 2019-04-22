@@ -66,13 +66,8 @@ name='omitCell' {{ (old('omitCell') == 'on') ? 'checked' : '' }}
             
 
 ## 5. Code: General
-Address as many of the following points as applicable:
 
-+ Do you notice any inconsistencies between the code and the course notes on [code style](https://github.com/susanBuck/dwa15-fall2018/blob/master/misc/code-style.md)?
-+ Are there any best practices discussed in course material that you feel were not addressed in the code?
-+ Are there aspects of the code that you feel were not self-evident and would benefit from comments?
-+ Are there any parts of the code that you found interesting/would not have thought to do yourself?
-+ Are there any parts of the code that you don't understand?
++ No significant issues noted with code.  Project appears clearly written and not cluttered with unnecessary comments or test code.  Flow also appears simple and easy to follow.
 
 ## 6. Misc
-Do you have any additional comments not covered in the above questions?
++ N/A
