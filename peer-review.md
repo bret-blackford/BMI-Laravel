@@ -17,7 +17,7 @@
 
 ## 2. Functional testing
 
-+ Name can be non-charachters, such as only umbers or special charachters. 
++ Name can be non-characters, such as only umbers or special charachters. 
 + Attempted various phone numbers styles, such as 314-999-9999, 314/999-9999, 314.999.9999, and 3149999999. Only all numbers works, but instructions not clear on this.
 + Attempted to leave out several entry fields but all seem required (though not identified as such)
 + Attempted adding html syntax to text entry, such as `<p>Bret</p>` to the First Name field.  No unusual behavior noticed.
