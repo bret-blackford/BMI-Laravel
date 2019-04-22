@@ -66,7 +66,7 @@ name='omitCell' {{ (old('omitCell') == 'on') ? 'checked' : '' }}
 
 ## 5. Code: General
 
-+ codes passed validation at `https://validator.w3.org` 
++ codes passed validation at https://validator.w3.org 
 + No significant issues noted with code.  Project appears clearly written and not cluttered with unnecessary comments or test code.  Flow also appears simple and easy to follow.
 
 ## 6. Misc
