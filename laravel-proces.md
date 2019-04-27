@@ -1,12 +1,12 @@
-Steps with a New Laravel Project 
+## Steps with a New Laravel Project 
 
-1) Create Project
+1) **Create Project**
 1. cd `C:\xampp\htdocs`
-2. `composer create-project laravel/laravel myProject “5.8.*” --prefer-dist`
+`composer create-project laravel/laravel myProject “5.8.*” --prefer-dist`
 2) Point Local Server to New App
-1. open `C:\Windows\System32\drivers\etc\hosts` file
-2. `nano  C:\Windows\System32\drivers\etc\hosts`
-3. add new line for new project 
+    1. open `C:\Windows\System32\drivers\etc\hosts` file
+    2. `nano  C:\Windows\System32\drivers\etc\hosts`
+    3. add new line for new project 
 ```
 # localhost name resolution is handled within DNS itself.
 #       127.0.0.1       localhost
@@ -16,9 +16,8 @@ Steps with a New Laravel Project
 127.0.0.1 BMI-P4.loc
 127.0.0.1 foobooks.loc
 ```
-3) create new VirtualHost block
-4) open `C:\xampp\apache\conf\extra\httpd-vhosts.conf` file
-5) `nano C:\xampp\apache\conf\extra\httpd-vhosts.conf `
+3) **create new VirtualHost block**
+4) open `C:\xampp\apache\conf\extra\httpd-vhosts.conf` file `nano C:\xampp\apache\conf\extra\httpd-vhosts.conf `
 ```
 <VirtualHost *:80>
         ServerName foobooks.loc
@@ -31,21 +30,21 @@ Steps with a New Laravel Project
         </Directory>
 </VirtualHost>
 ```
-6) Version Control
+6) **Version Control**
 7) run this at command line of new project path : `git init`
 8) go to github and create a new repository without a README.md file
 9) in github note the SSH URL
 10) run this at command line of new project path : `git remote add origin git@github.com:username/myProject.git`
-11) `git add –all`
-12) `git commit -m “First commit”`
-13) `git push –set-upstream origin master`
-14) clone Laravel ap to production  (DigitalOcean)
+ `git add –all`
+ `git commit -m “First commit”`
+ `git push –set-upstream origin master`
+14) **clone Laravel ap to production  (DigitalOcean)**
 15) ssh into DigitalOcean Droplet `ssh root@123.456.789.000`
 16) navigate to document root at `/var/www/html`
 17) run `git clone git@github.com:username/myProject.git`
 18) refresh via `composer install --no-dev`
 19) Set Environment File (.env) in Prod ( ??? )
-20) Configure Subdomain 
+20) **Configure Subdomain** 
 21) open `/etc/apache2/sites-enabled\000-default.conf`
 22) add new VirtualHost block restart Apache via : `service apache2 restart `
 23) run `composer install --no-dev`
@@ -79,7 +78,7 @@ Steps with a New Laravel Project
 33) run `$ composer dump-autoload`
 34) Views at `myProject/resources/views`
 35) Blade Templates at `myProject/layouts/master.blade.php`
-36) ADD DATABASE
+36) **ADD DATABASE**
 37) create a utf8mb4_unicode_ci Db Table via phpMyAdmin
 38) modify `/config/database.php` file
 ```
@@ -118,14 +117,14 @@ DB_PASSWORD=
     dump($debug);
 });
 ```
-41) Configure XAMPP for Db Migrations
+41) **onfigure XAMPP for Db Migrations**
 42) in `/app/Providers/AppServiceProvider.php` update boot method via
 ```php
 public function boot() {
     \Scema::defaultStringLength(191);
 }
 ```
-43) .Generate New Migration File
+43) Generate New Migration File
 44) `$ php artisan make:migration create_myTable_table`
 45) add fields in the `/database/migrations/_create_mtTable_table.php` in the public function up() section
 46) run `$ php artisan migrate:fresh` to create fields noted in up() section
