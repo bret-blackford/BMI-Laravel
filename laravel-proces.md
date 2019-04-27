@@ -117,7 +117,7 @@ DB_PASSWORD=
     dump($debug);
 });
 ```
-41) **onfigure XAMPP for Db Migrations**
+41) **Configure XAMPP for Db Migrations**
 42) in `/app/Providers/AppServiceProvider.php` update boot method via
 ```php
 public function boot() {
