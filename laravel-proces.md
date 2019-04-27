@@ -4,8 +4,8 @@
 1. cd `C:\xampp\htdocs`
 `composer create-project laravel/laravel myProject “5.8.*” --prefer-dist`
 2) Point Local Server to New App
-    1. open `elevate nano C:\Windows\System32\drivers\etc\hosts` file
-    2. `nano  C:\Windows\System32\drivers\etc\hosts`
+    1. open `C:\Windows\System32\drivers\etc\hosts` file
+    2. `elevate nano  C:\Windows\System32\drivers\etc\hosts`
     3. add new line for new project 
 ```
 # localhost name resolution is handled within DNS itself.
