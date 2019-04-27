@@ -35,9 +35,9 @@
 8) go to github and create a new repository without a README.md file
 9) in github note the SSH URL
 10) run this at command line of new project path : `git remote add origin git@github.com:username/myProject.git`
- `git add –all`
- `git commit -m “First commit”`
- `git push –set-upstream origin master`
+ `git add –all`  
+ `git commit -m “First commit”`  
+ `git push –set-upstream origin master`  
 14) **clone Laravel ap to production  (DigitalOcean)**
 15) ssh into DigitalOcean Droplet `ssh root@123.456.789.000`
 16) navigate to document root at `/var/www/html`
