@@ -102,9 +102,13 @@ DB_PASSWORD=
 ```
 40) test connection via this in web routes file 
 ```phpRoute::get('/debug', function () {
+Route::get('/debug', function () {
+
     $debug = [
         'Environment' => App::environment(),
     ];
+
+    #$debug['MySQL connection config'] = config('database.connections.mysql');
 
     try {
         $databases = DB::select('SHOW DATABASES;');
