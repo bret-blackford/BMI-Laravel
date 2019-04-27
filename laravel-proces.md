@@ -108,8 +108,6 @@ Route::get('/debug', function () {
         'Environment' => App::environment(),
     ];
 
-    #$debug['MySQL connection config'] = config('database.connections.mysql');
-
     try {
         $databases = DB::select('SHOW DATABASES;');
         $debug['Database connection test'] = 'PASSED';
