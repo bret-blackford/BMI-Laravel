@@ -123,12 +123,12 @@ Route::get('/debug', function () {
 42) in `/app/Providers/AppServiceProvider.php` update boot method via
 ```php
 public function boot() {
-    \Scema::defaultStringLength(191);
+    \Schema::defaultStringLength(191);
 }
 ```
 43) Generate New Migration File
 44) `$ php artisan make:migration create_myTable_table`
-45) add fields in the `/database/migrations/_create_mtTable_table.php` in the public function up() section
+45) add fields in the `/database/migrations/_create_myTable_table.php` in the public function up() section
 46) run `$ php artisan migrate:fresh` to create fields noted in up() section
 47) Create a Model
 48) run `$ php artisan make:model Book`
